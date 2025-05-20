@@ -41,7 +41,7 @@ Let us have following actions:
 
 * It builds.
 * It conforms to style
-* Unit tests are passing **TODO**
+* Unit tests are passing
 * Linter is happy **TODO**
 * Let us add AI generated code review **TODO**
 

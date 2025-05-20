@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
 
   json data = json::parse(f);
 
-  std::cout << data.dump() << std::endl;
+  std::cout << data.dump(4) << std::endl;
 
   return 0;
 }

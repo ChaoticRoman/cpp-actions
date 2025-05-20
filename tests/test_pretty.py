@@ -11,11 +11,11 @@ print(example_path)
 def test_pretty_json_output():
     result = subprocess.run([binary_path, example_path], capture_output=True, text=True, check=True)
 
-    output = result.stdout
+    output = result.stdout.strip()
     expected = json.dumps(
         ["Hello", 1, True, {"another_key": 666, "key": "value"}],
         indent=4
-    )
+    ).strip()
 
     assert output == expected, f"Expected output:\n{expected}\n\nGot:\n{output}"
 
