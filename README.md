@@ -33,7 +33,7 @@ make
 
 Let us have following actions:
 
-* It builds. **TODO**
+* It builds.
 * It conforms to style **TODO**
 * Linter is happy **TODO**
 * Let us add AI generated code review **TODO**
