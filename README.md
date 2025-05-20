@@ -23,10 +23,16 @@ sudo apt install make g++ nlohmann-json3-dev
 make
 ```
 
+## Test
+
+```
+make test
+```
+
 ## Run
 
 ```
-./pretty-json
+./pretty-json example.json
 ```
 
 ## Actions
