@@ -9,6 +9,26 @@ for that. **TODO**
 
 [json]: https://github.com/nlohmann/json
 
+## Dependencies
+
+Install dependencies on Ubuntu 24.04.2 LTS:
+
+```
+sudo apt install make g++ nlohmann-json3-dev
+```
+
+## Build
+
+```
+make
+```
+
+## Run
+
+```
+./pretty-json
+```
+
 ## Actions
 
 Let us have following actions:
