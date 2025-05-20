@@ -4,13 +4,12 @@
 
 using json = nlohmann::json;
 
-int main(int argc, char **argv)
-{
-        std::ifstream f("example.json");
+int main(int argc, char **argv) {
+  std::ifstream f("example.json");
 
-    json data = json::parse(f);
+  json data = json::parse(f);
 
-    std::cout << data.dump() << std::endl;
+  std::cout << data.dump() << std::endl;
 
-    return 0;
+  return 0;
 }
