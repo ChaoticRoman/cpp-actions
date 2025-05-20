@@ -37,3 +37,9 @@ Let us have following actions:
 * It conforms to style **TODO**
 * Linter is happy **TODO**
 * Let us add AI generated code review **TODO**
+
+## Resources
+
+* https://docs.github.com/en/actions
+* https://docs.github.com/en/actions/use-cases-and-examples/creating-an-example-workflow
+* https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions
