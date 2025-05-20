@@ -4,7 +4,6 @@
 
 using json = nlohmann::json;
 
-
 int main(int argc, char **argv)
 {
     std::ifstream f("example.json");
