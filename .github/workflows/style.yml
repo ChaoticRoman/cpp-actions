@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt install clang-format
-      - run: ./style-check.sh
+      - run: ./check-style.sh
