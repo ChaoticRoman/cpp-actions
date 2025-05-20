@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: sudo apt install make g++ nlohmann-json3-dev
+      - name: Build binary
+        run: make
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: pretty-json
+          path: ./pretty-json
+
+  Test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download pretty-json artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: pretty-json
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.13
+      - name: Install pytest
+        run: pip install pytest
+      - name: Run tests
+        run: make test
