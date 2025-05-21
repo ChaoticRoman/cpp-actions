@@ -5,14 +5,12 @@
 
 using json = nlohmann::json;
 
-0
-
 int main(int argc, char **argv) {
   std::ifstream f(argv[1]);
 
   json data = json::parse(f);
 
-  std::cout << data.dump(4) << std::endl;
+  std::cout << data.dump(2) << std::endl;
 
   return 0;
 }
