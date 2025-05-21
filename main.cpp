@@ -6,7 +6,7 @@
 using json = nlohmann::json;
 
 int main(int argc, char **argv) {
-  std::ifstream f(argv[1]);
+          std::ifstream f(argv[1]);
 
   json data = json::parse(f);
 
