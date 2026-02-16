@@ -1,0 +1,18 @@
+# .github/workflows/echo-trigger.yml
+name: Echo trigger
+
+on:
+  push:
+    # Triggers on pushes to the repository's default branch
+    branches:
+      - $default-branch
+    # Triggers on any tag push (tags are not tied to branches)
+    tags:
+      - "**"
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo event + sha
+        run: echo "Event triggered by ${{ github.event_name }} on ${{ github.sha }}"
